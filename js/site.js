@@ -11,6 +11,10 @@ $draggable.on( 'dragStart', function( event, pointer, moveVector ) {
 	zIndex++;
 })
 
+$draggable.on( 'staticClick', function( event, pointer ) {
+	console.log(event);
+})
+
 $slides.each(function(){
 	var $self = $(this);
 	// $self.

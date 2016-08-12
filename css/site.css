@@ -16,9 +16,10 @@ h1
 
 h3
 {
-	font-size: 122%;
+	font-size: 365%;
+	line-height: 115%;
 	color: red;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 a
@@ -57,21 +58,49 @@ li
 {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0;	
 }
+[data-slide]:hover
+{
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+[data-slide]:active
+{
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+.content
+{
+	width: 500px;
+	background: white;
+}
+
+// .content.is-pointer-down
+// {
+// 	font-size: 125%;
+// 	width: 700px;
+// }
+
+
 
 [data-slides] > li { display: none; }
 [data-slides] li
 {
 	position: absolute;
-	max-width: 300px;
+	// max-width: 300px;
 }
+
+.content a { display: block; }
+.content li { position: relative; }
 
 [data-slides] li.active  { display: inline-block; }
 
 img
 {
-	max-width: 350px; 
+	max-width: 300px; 
 }
 
 .is-pointer-down img{ max-width: none; }
