@@ -65,6 +65,7 @@ h3
 	line-height: 115%;
 	color: red;
 	margin-bottom: 3rem;
+	word-wrap: break-word;
 }
 
 h3 .meta
